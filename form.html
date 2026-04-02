@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <title>Form Pembayaran 💖</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="card">
+    <h2>Form Pembayaran 💕</h2>
+
+    <form action="index.php" method="POST">
+        
+        <label>Jumlah (Rp)</label>
+        <input type="number" name="jumlah" required>
+
+        <label>Metode Pembayaran</label>
+        <select name="metode">
+            <option value="transfer">Transfer Bank</option>
+            <option value="ewallet">E-Wallet</option>
+            <option value="qris">QRIS</option>
+            <option value="cod">COD</option>
+            <option value="va">Virtual Account</option>
+        </select>
+
+        <button type="submit">Bayar 💸</button>
+    </form>
+</div>
+
+</body>
+</html>

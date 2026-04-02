@@ -2,21 +2,22 @@
 require_once 'Pembayaran.php';
 require_once 'Cetak.php';
 
-#Penggunaan Class Transfer Bank dari Extend
-class TransferBank extends Pembayaran implements Cetak {
+#Penggunaan Class QRIS
+class VirtualAccount extends Pembayaran implements Cetak {
 
     public function __construct($jumlah) {
         parent::__construct($jumlah);
     }
+
     public function prosesPembayaran() {
         if ($this->validasi()) {
-            return "Transfer Bank sebesar Rp {$this->jumlah}";
-        }
+            return "Pembayaran VirtualAccount Rp {$this->jumlah} berhasil";
+        }        
         return "Jumlah tidak valid";
     }
 
     public function cetakStruk() {
-        return "Struk Transfer Bank: Rp {$this->jumlah}";
+        return "Struk VirtualAccount: Rp {$this->jumlah}";
     }
 }
 ?>

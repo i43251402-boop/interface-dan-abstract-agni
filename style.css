@@ -1,0 +1,50 @@
+body {
+    font-family: 'Comic Sans MS', cursive;
+    background: linear-gradient(135deg, #ffd6e8, #ffe6f2);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.card {
+    background: white;
+    padding: 30px;
+    border-radius: 20px;
+    box-shadow: 0 10px 20px rgba(255, 105, 180, 0.3);
+    width: 300px;
+    text-align: center;
+}
+
+h2 {
+    color: #ff4da6;
+}
+
+label {
+    display: block;
+    margin-top: 10px;
+    color: #ff4da6;
+}
+
+input, select {
+    width: 100%;
+    padding: 8px;
+    margin-top: 5px;
+    border-radius: 10px;
+    border: 1px solid pink;
+}
+
+button {
+    margin-top: 15px;
+    width: 100%;
+    padding: 10px;
+    border: none;
+    background: #ff4da6;
+    color: white;
+    border-radius: 15px;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #ff1a8c;
+}
